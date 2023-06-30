@@ -13,6 +13,7 @@
 
 ## Application Structure
 
+
 #### Business Logic module
 Contains Jarvis logic. api calls and Jarvis objects (e.g tasks, models) and Jarvis logic function (e.g isTaskHidden)
 
