@@ -1,7 +1,8 @@
 const fs = require('fs');
 
 const targets = [
-  'https://demoapi.trains.allegro.ai',               // 1
+  'http://13.234.148.242:8008',               // 1
+  
 ];
 
 const PROXY_CONFIG = {
