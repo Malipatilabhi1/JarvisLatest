@@ -170,7 +170,6 @@ openHtmlFile() {
     
     // })
   }
-
   arrowLink2:any;
   arrowLink3:any;
   arrowLink4:any;
