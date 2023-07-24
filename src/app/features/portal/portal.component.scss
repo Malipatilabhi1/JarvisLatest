@@ -164,3 +164,44 @@ mat-expansion-panel{
 .inside_icon1{
   margin-right: 1px solid #3F4E6C;
 }
+
+.separator {
+  position: relative;
+  text-align: center;
+}
+
+.separator hr {
+  border: none;
+  height: 1px;
+  background-color: #000; /* Set the desired color for the line */
+}
+
+.separator span {
+  position: absolute;
+  top: -10px; /* Adjust the positioning of the section name */
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  background-color: #fff; /* Set the desired background color for the section name */
+  padding: 0 10px;
+}
+
+[aria-placeholder] {
+  position: relative;
+}
+
+[aria-placeholder]:after {
+  content: attr(aria-placeholder);
+  position: absolute;
+  left: 50%;
+  bottom:120%; /* put it on the top */
+  background-color: transparent;
+  color: #3F4E6C;
+  width: max-content;
+  opacity: 0;
+  // -webkit-transition: opacity 0.50s ease-in-out;
+   /* 👈 Change the time to meet your requirements. */
+}
+[aria-placeholder]:hover:after {
+  opacity: 1;
+}

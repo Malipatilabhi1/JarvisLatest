@@ -43,7 +43,7 @@
                         <div class="d-flex flex-row mt-3 mb-3">
                           <div class="paneltitle"><b>{{panelOpenState?data.solutionName:truncateText(data.solutionName,
                               23)}}</b></div>
-                          <div class=""><img src="assets\3dots.png" alt="dots-Icon" ></div> 
+                          <div class="" (click)="$event.preventDefault();$event.stopPropagation()"><img src="assets\3dots.png" alt="dots-Icon" ></div> 
                           
                         </div>
                         <mat-menu #menu="matMenu" class="d-flex flex-row">
@@ -119,7 +119,7 @@
                             (click)="deleteId(data,'Solution')"></mat-icon>
                           </a> </div>
 
-                      <div class="btn-grp inside_icon1 ml-4" width="16.7%"> <a><img src="assets\ShoppingCart.png" alt="cart-Icon"
+                      <div class="btn-grp inside_icon1 ml-4" width="16.7%"> <a aria-placeholder="Add Cart"><img src="assets\ShoppingCart.png" alt="cart-Icon"
                             class="inside_icons"></a> </div>
                     </div>
                   </mat-expansion-panel>
@@ -174,7 +174,7 @@
                         <div class="d-flex flex-row mt-3 mb-3">
                           <div class=" paneltitle">
                             <b>{{panelOpenState1?data.frontendName:truncateText(data.frontendName, 23)}}</b></div>
-                          <div class=""><img src="assets\3dots.png" alt="dots-Icon" ></div>
+                          <div class="" (click)="$event.preventDefault();$event.stopPropagation()"><img src="assets\3dots.png" alt="dots-Icon" ></div>
                           <!-- [matMenuTriggerFor]="menu" -->
                         </div>
                         <mat-menu #menu="matMenu" class="d-flex flex-row">
@@ -219,7 +219,7 @@
                             fontIcon="delete" data-toggle="modal" data-target="#confModal"
                             (click)="deleteId(data,'Frontend')"></mat-icon></a> </div>
 
-                      <div class="btn-grp pl-4" width="25%"> <a><img src="assets\ShoppingCart.png" alt="cart-Icon"
+                      <div class="btn-grp pl-4" width="25%"> <a aria-placeholder="Add Cart"><img src="assets\ShoppingCart.png" alt="cart-Icon"
                               class="inside_icons"></a> </div>
                     </div>
                   </mat-expansion-panel>
@@ -271,7 +271,7 @@
                       <mat-panel-title>
                         <div class="d-flex flex-row mt-3 mb-3">
                           <div class="paneltitle"><b>{{panelOpenState2?data.pipelineName:truncateText(data.pipelineName,23)}}</b></div>
-                          <div class=""><img src="assets\3dots.png" alt="dots-Icon"></div>
+                          <div class="" (click)="$event.preventDefault();$event.stopPropagation()"><img src="assets\3dots.png" alt="dots-Icon" [matMenuTriggerFor]="menu"></div>
                           <!-- [matMenuTriggerFor]="menu" -->
                         </div>
                         <mat-menu #menu="matMenu" class="d-flex flex-row">
@@ -396,7 +396,7 @@
                           <mat-panel-title>
                             <div class="d-flex flex-row mt-3 mb-3">
                               <div class=" paneltitle"><b>{{panelOpenState3?data.modelName:truncateText(data.modelName, 23)}}</b></div>
-                              <div class=""><img src="assets\3dots.png" alt="dots-Icon" ></div>
+                              <div class="" (click)="$event.preventDefault();$event.stopPropagation()"><img src="assets\3dots.png" alt="dots-Icon" ></div>
                               <!-- [matMenuTriggerFor]="menu" -->
                             </div>
                             <mat-menu #menu="matMenu" class="d-flex flex-row">
@@ -517,8 +517,8 @@
                     <mat-expansion-panel-header class="specific-class">
                       <mat-panel-title>
                         <div class="d-flex flex-row mt-3 mb-3">
-                          <div class=" paneltitle"><b>{{panelOpenState4?data.datasetName:truncateText(data.datasetName, 23)}}</b></div>
-                          <div class=""><img src="assets\3dots.png" alt="dots-Icon" ></div>
+                          <div class=" paneltitle"><b>{{panelOpenState4?data.datasetName:truncateText(data.datasetName, 21)}}</b></div>
+                          <div class="" (click)="$event.preventDefault();$event.stopPropagation()"><img src="assets\3dots.png" alt="dots-Icon" ></div>
                           <!-- [matMenuTriggerFor]="menu" -->
                         </div>
                         <mat-menu #menu="matMenu" class="d-flex flex-row">

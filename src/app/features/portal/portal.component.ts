@@ -163,7 +163,7 @@ openHtmlFile() {
    callCarddata(){
   //   this.http.get("http://3.111.229.37:3000/clearml/dataset").subscribe(response => { 
     
-  //   })http://3.111.229.37/
+  //   })http://3.111.229.37/   13.234.148.242
    }
   callCardpipeline(){
     // this.http.get("http://3.111.229.37:3000/clearml/pipeline").subscribe(response => { 
@@ -1297,18 +1297,15 @@ onInputChange(key:string,value:string){
   }
 
    linkage(data:any){
-  
     let solutionId=data.id;
     this.http.post('http://3.111.229.37:3000/solution/linked', {solutionId})
-    .subscribe(response => {
-      
+    .subscribe(response => {    
       this.linkagedata=response;
       this.empty();  
       console.log(this.linkagedata);
       debugger
       this.linkCheck();
-      this.selected=true;
-      
+      this.selected=true;   
           this.Solution=this.linkagedata.solutions;
           this.isPanelOpen=true;
           this.Modules=this.linkagedata.models;
