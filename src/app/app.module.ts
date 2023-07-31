@@ -1,4 +1,4 @@
-import {APP_INITIALIZER, NgModule} from '@angular/core';
+import {APP_INITIALIZER, NO_ERRORS_SCHEMA, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {PreloadAllModules, RouteReuseStrategy, RouterModule} from '@angular/router';
@@ -32,6 +32,7 @@ import { NgParticlesModule } from "ng-particles";
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { TestComponent } from './features/test/test.component';
+import { CommonModule } from '@angular/common';
 
 // import { OAuthModule, OAuthService } from 'angular-oauth2-oidc';
 
@@ -39,6 +40,7 @@ import { TestComponent } from './features/test/test.component';
 @NgModule({
   declarations   : [AppComponent,PortalComponent, SplashScreenComponent, TestComponent],
   imports: [
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
@@ -95,6 +97,9 @@ import { TestComponent } from './features/test/test.component';
       useFactory: (confService: ConfigurationService) =>
         confService.getStaticEnvironment().GTM_ID
     },
+  ],
+  schemas: [
+    NO_ERRORS_SCHEMA
   ],
   bootstrap      : [AppComponent],
   exports        : []

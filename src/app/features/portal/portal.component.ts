@@ -1,16 +1,10 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild, ViewEncapsulation } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs';
-import { SMMaterialModule } from '../../webapp-common/shared/material/material.module'
-import {ICONS} from '@common/constants';
-import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
-import { style } from '@angular/animations';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { ToastrService } from 'ngx-toastr';
 import {CartService} from '~/shared/services/cart.service'
-import { error, log } from 'console';
-import { MatAccordion } from '@angular/material/expansion';
+
 
 
 
@@ -123,41 +117,6 @@ openHtmlFile() {
 }
   groupedData:any;
   sections:any=[];
-  // Test_model:any=[
-  //   {id:1,modelDescription:"Model test desc",modelName:"Model Test Retail",domain:"Retail"},
-  //   {id:2,modelDescription:"Model test desc",modelName:"Model Test Healthcare",domain:"Healthcare"},
-  //   {id:3,modelDescription:"Model test desc",modelName:"Model Test Healthcare",domain:"Healthcare"},
-  //   {id:4,modelDescription:"Model test desc",modelName:"Model Test Retail",domain:"Retail"},
-  //   {id:5,modelDescription:"Model test desc",modelName:"Model Test Healthcare",domain:"Healthcare"} ,
-  //   {id:6,modelDescription:"Model test desc",modelName:"Model Test Finance",domain:"Finance"}  
-  // ]
-
-  // ----------------For on open panel lines position handle---------------------
-
-  // idx:any;
-  // onPanelOpened(data:any,state:any) {
-    
-  //   if(state=='opened'){
-  //     this.panelOpenState=true;
-  //   }else{
-  //     this.panelOpenState=false;
-  //   }
-   
-  //   if(this.link){
-  //     if(data.frontendName){
-  //       this.idx=this.Frontend.indexOf(data);
-  //     }else if(data.pipelineName){
-  //       this.idx=this.pipeline.indexOf(data);
-  //     }else if(data.modelName){
-  //       this.idx=this.Modules.indexOf(data);
-  //     }else if(data.datasetName){
-  //       this.idx=this.Dataset.indexOf(data);
-  //     }
-      
-  //     this.updateArrows(data);
-  //   }
-  // }
-//---------------------------------------------------------------------------------
 
  // 3.111.229.37
    callCarddata(){

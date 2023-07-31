@@ -10,9 +10,9 @@ import {
   Output,
   ViewChild
 } from '@angular/core';
-import scatterPlot from 'britecharts/dist/umd/scatterPlot.min';
+import scatterPlot from 'britecharts/dist/umd/charts/scatterPlot.min';
 // import scatterPlot from 'britecharts/src/charts/scatter-plot';
-import miniTooltip from 'britecharts/dist/umd/miniTooltip.min';
+import miniTooltip from 'britecharts/dist/umd/charts/miniTooltip.min';
 // import miniTooltip from 'britecharts/src/charts/mini-tooltip';
 import {select, Selection} from 'd3-selection';
 import {cloneDeep} from 'lodash/fp';

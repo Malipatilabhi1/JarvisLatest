@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import {select, Selection} from 'd3-selection';
 import {ColorHashService} from '../../../services/color-hash/color-hash.service';
-import donut from 'britecharts/dist/umd/donut.min';
+import donut from 'britecharts/dist/umd/charts/donut.min';
 import {Store} from '@ngrx/store';
 import {BehaviorSubject, combineLatest, fromEvent, Subscription} from 'rxjs';
 import {debounceTime, filter, startWith} from 'rxjs/operators';
